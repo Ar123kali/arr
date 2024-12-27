@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML and JavaScript</title>
+
+<style>
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+</style>
+</head>
+
+<body>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<h1>My First JavaScript</h1>
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+
+
+<h2> this is a button when u click it it chnages</h2>
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+<p id="demo">This say my name is .</p>
+
+<script>
+function myFunction() { 
+  document.getElementById("demo").innerHTML = "look what happened!";
+}
+</script>
+
+
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.font = "30px Arial";
+ctx.fillText("You see now ",10,50);
+</script>
+
+<h1>The border-radius Property</h1>
+
+<p>Rounded corners for an element with a specified background color:</p>
+<p id="rcorners1">Rounded corners!</p>
+<p>Rounded corners for an element with a border:</p>
+<p id="rcorners2">Rounded corners!</p>
+
+
+
+</body>
+</html> 
+
+
